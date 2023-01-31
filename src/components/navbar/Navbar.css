@@ -1,0 +1,23 @@
+.navbar {
+  /* fits elements inline on row */
+    display: flex;
+    /* decides direction elements will flex, in this case row */
+    flex-direction: row;
+  }
+  
+  .navbar-item {
+    /* determines grid element layout */
+    display: flex;
+    /* align flex items */
+    justify-content: center;
+    /* centers items */
+    align-items: center;
+    /* applies margin left side */
+    margin-left: 45px;
+    /* color: inherit; */
+    text-decoration: inherit;
+    /* capitalise text */
+    text-transform: uppercase;
+    /* remove outline if applied */
+    outline: none;
+  }
