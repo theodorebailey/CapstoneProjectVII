@@ -7,6 +7,8 @@ import Wrongletters from './components/Wrongletters';
 import Word from './components/Word';
 import Popup from './components/Popup';
 import Notification from './components/Notification';
+// importing same name?
+import { showNotification as show } from './helpers/helpers';
 
 // We want to build our App, then identify what states we require
 // Simple, we don't need state management
@@ -29,6 +31,7 @@ function App() {
   const [playable, setPlayable] = useState(true); 
   const [correctLetters, setCorrectLetters] = useState([]);
   const [wrongLetters, setWrongLetters] = useState([]);
+  const [showNotification, setShowNotification] = useState(false);
 
   // use effect will use any side effects of our app
   // By adding our event listener here, everytime our app re-renders our event listener will be added
@@ -43,19 +46,24 @@ function App() {
         const letter = key.toLowerCase();
         // Now if the selected word contains the letter (passed as parameter)
         if (selectedWord.includes(letter)) {
-          // if correct letters doesn't include the letter
+          // if correct letters doesn't include the letter - add to letters
           if (!correctLetters.includes(letter)) {
             // setCorrectLetters to currentLetters, spread operator for currentLetters, then add new letter evaluated to true
             setCorrectLetters(currentLetters => [...currentLetters, letter]);
             // run display word function
           } else {
-            // showNotification();
+            // shows notification we've already entered our letter
+            // imported function passed with parameter setShowNotification switch between states true and false;
+            show(setShowNotification);
           }
         } else {
+          // check if already included wrong letters
           if (!wrongLetters.includes(letter)) {
+            // if doesn't include letter, setWrongLetters to the wrongLetters, split array and add new letter
             setWrongLetters(wrongLetters => [...wrongLetters, letter]);
           } else {
-            // showNotification();
+            // if already included show a notification
+            show(setShowNotification);
           }
         }
       }
@@ -80,6 +88,8 @@ function App() {
         <Wrongletters wrongLetters={wrongLetters} />
         {/* pass down as props */}
         <Word selectedWord={selectedWord} correctLetters={correctLetters}/>
+        <Popup />
+        <Notification showNotification={showNotification} />
       </div>
       <Footer />
     </div>
