@@ -9,3 +9,23 @@ export function showNotification(setter) {
 
     }, 2000)
 }
+
+export function checkWin(correct, wrong, word) {
+
+    let status = 'win';
+
+    // check win
+    word.split('').forEach(letter => {
+        // if not correct includes our letter - array doesn't include - set status to nothing
+        if(!correct.includes(letter)) {
+            // doesn't mean we've won or lost yet - use case for most examples
+            status = '';
+        }
+        
+    });
+
+    // check for loss
+    if (wrong.length == 10) status = 'lose';
+
+    return status;
+}

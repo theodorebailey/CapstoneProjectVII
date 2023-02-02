@@ -1,8 +1,9 @@
 import React from 'react'
 
-const Notification = () => {
+const Notification = ( { showNotification }) => {
   return (
-    <div className="notification-container" id="notification-container">
+    // template literal with ternary operator takes show nofitication, if true add show / add nothing
+    <div className={`notification-container ${showNotification ? 'show' : ''}`}>
       <p>You have already entered this letter</p>
     </div>
   )

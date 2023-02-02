@@ -25,7 +25,6 @@ let playable = true;
 const correctLetters = [];
 const wrongLetters = [];
 
-
 function App() {
 
   const [playable, setPlayable] = useState(true); 
@@ -79,6 +78,19 @@ function App() {
   // anytime correctLetters, wrongLetters and playable get updated will call this function, and on initial render
   }, [correctLetters, wrongLetters, playable]);
 
+  function playAgain () {
+    // set playable to true
+    setPlayable(true);
+  
+    // empty all game dependent arrays
+    setCorrectLetters([]);
+    setWrongLetters([]);
+  
+    const randomSelector = Math.floor(Math.random() * words.length);
+    selectedWord = words[randomSelector];
+  
+  }
+
 
    return (
     <div className="App">
@@ -88,9 +100,9 @@ function App() {
         <Wrongletters wrongLetters={wrongLetters} />
         {/* pass down as props */}
         <Word selectedWord={selectedWord} correctLetters={correctLetters}/>
-        <Popup />
-        <Notification showNotification={showNotification} />
       </div>
+      <Popup correctLetters={correctLetters} wrongLetters={wrongLetters} selectedWord={selectedWord} setPlayable={setPlayable} playAgain={playAgain}/>
+      <Notification showNotification={showNotification} />
       <Footer />
     </div>
   );
