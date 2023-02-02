@@ -39,15 +39,11 @@
   }
   
   .footer-info__name, .footer-info__email, .footer-info__number {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   
   .footer-info__name, .footer-info__returns {
     text-align: start;
-  }
-  
-  .footer-info__email, .footer-info__terms {
-    text-align: center;
   }
   
   .footer-info__number, .footer-info__contact {
