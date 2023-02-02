@@ -76,7 +76,7 @@ function App() {
     <div className="App">
       <Header />
       <div className="container">
-        <Figure />
+        <Figure wrongLetters={wrongLetters} />
         <Wrongletters wrongLetters={wrongLetters} />
         {/* pass down as props */}
         <Word selectedWord={selectedWord} correctLetters={correctLetters}/>

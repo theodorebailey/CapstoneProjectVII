@@ -4,7 +4,7 @@ import React from 'react'
 
 const Word = ({selectedWord, correctLetters}) => {
   return (
-    <div class="word" id="word">
+    <div className="word" id="word">
         {/* grab selected word parameter, split word, map word into array, parameter letter*/}
         {/* require index of letter */}
         {/* map through each letter in selected word, check if it is in correct letters array, if yes then display letter in span tag / blank via ternary operator */}
