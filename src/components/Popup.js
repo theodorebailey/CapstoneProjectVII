@@ -3,6 +3,7 @@ import React, { useEffect } from 'react'
 import { checkWin } from './../helpers/helpers';
 // remember to destructer your props
 // set playable is a side effect
+// check correct letters, wrong letters, selectedWord for game, setPlayable boolean and add play again
 const Popup = ({ correctLetters, wrongLetters, selectedWord, setPlayable, playAgain } ) => {
 
   let finalMessage = '';
@@ -21,7 +22,7 @@ const Popup = ({ correctLetters, wrongLetters, selectedWord, setPlayable, playAg
   useEffect(() => setPlayable(playable));
 
   return (
-    <div className="popup-container" style={finalMessage !== '' ? {display: 'flex'} : {}}>
+    <div className="popup-container">
       <div className="popup">
         <h2>{finalMessage}</h2>
         <h3>{finalMessageRevealWord}</h3>

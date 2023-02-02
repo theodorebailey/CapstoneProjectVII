@@ -11,12 +11,9 @@ import Popup from './components/Popup';
 import Notification from './components/Notification';
 
 import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
-import About from './components/About';
 
 import Dictionary from './dictionary.txt';
 
-import Buttons from './components/Buttons';
 
 
 // importing same name?
@@ -55,6 +52,7 @@ function App() {
   useEffect(() => {
     // our event has parameters
     const handleKeydown = event => {
+      // key and ascii code using react
     const {key, keyCode} = event;
       // if playable true and event object keyCode is between alphabet range
       // ensure letters read as such - if letter key
@@ -123,10 +121,7 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-          <Route path='/Contact' element={<Contact />} />
           <Route path='/Portfolio' element={<Portfolio />} />
-          <Route path='/About' element={<About />} />
-          {/* <Route path='/' element={<Home />} /> */}
         </Routes>
         <div className="game-container">
         <Figure wrongLetters={wrongLetters} />
@@ -136,7 +131,6 @@ function App() {
       </div>
       <Popup correctLetters={correctLetters} wrongLetters={wrongLetters} selectedWord={selectedWord} setPlayable={setPlayable} playAgain={playAgain}/>
       <Notification showNotification={showNotification} />
-      <Buttons /> 
       <Footer />
     </div>
   );

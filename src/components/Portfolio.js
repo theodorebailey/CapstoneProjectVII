@@ -9,8 +9,6 @@ const Portfolio = () => {
 
 <div id="doc2" class="yui-t7">
 	<div id="inner">
-    
-	
 		<div id="hd">
 			<div class="yui-gc">
 				<div class="yui-u first">

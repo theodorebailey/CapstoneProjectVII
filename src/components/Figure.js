@@ -1,4 +1,5 @@
 import React from 'react';
+import './comp.css';
 
 import img0 from './hangmandrawings/state1.GIF';
 import img1 from './hangmandrawings/state2.GIF';
@@ -30,18 +31,18 @@ const Figure = ({wrongLetters}) => {
   return (
 
      <div className="container">
-      { errors == 0 && <img src={img0} alt="" /> }
-      { errors == 1 && <img src={img1} alt="" /> }
-      { errors == 2 && <img src={img2} alt="" /> }
-      { errors == 3 && <img src={img3} alt="" /> }
-      { errors == 4 && <img src={img4} alt="" /> }
-      { errors == 5 && <img src={img5} alt="" /> }
-      { errors == 6 && <img src={img6} alt="" /> }
-      { errors == 7 && <img src={img7} alt="" /> }
-      { errors == 8 && <img src={img8} alt="" /> }
-      { errors == 9 && <img src={img8} alt="" /> }
-      { errors == 10 && <img src={img9} alt="" />}
-      { errors == 11 && <img src={img10} alt="" />}
+      { errors == 0 && <img className="images" src={img0} alt="" /> }
+      { errors == 1 && <img className="images" src={img1} alt="" /> }
+      { errors == 2 && <img className="images" src={img2} alt="" /> }
+      { errors == 3 && <img className="images" src={img3} alt="" /> }
+      { errors == 4 && <img className="images" src={img4} alt="" /> }
+      { errors == 5 && <img className="images" src={img5} alt="" /> }
+      { errors == 6 && <img className="images" src={img6} alt="" /> }
+      { errors == 7 && <img className="images" src={img7} alt="" /> }
+      { errors == 8 && <img className="images" src={img8} alt="" /> }
+      { errors == 9 && <img className="images" src={img8} alt="" /> }
+      { errors == 10 && <img className="images" src={img9} alt="" />}
+      { errors == 11 && <img className="images" src={img10} alt="" />}
     </div> 
 
 

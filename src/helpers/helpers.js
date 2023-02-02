@@ -30,17 +30,17 @@ export function checkWin(correct, wrong, word) {
     return status;
 }
 
-export function buttongenerator() {
-  let buttons = 'abcdefghijklmnopqrstuvxyz'.split('').map(letter => 
-    `
-    <button className="btn btn-lg btn-primary m-2"
-    id='`+ letter + `
-    onClick="handleGuess('` + letter + `')"
-    >
+// export function buttongenerator() {
+//   let buttons = 'abcdefghijklmnopqrstuvxyz'.split('').map(letter => 
+//     `
+//     <button className="btn btn-lg btn-primary m-2"
+//     id='`+ letter + `
+//     onClick="handleGuess('` + letter + `')"
+//     >
 
-      ` + letter + `
-    </button>
-    `
-    );
+//       ` + letter + `
+//     </button>
+//     `
+//     );
 
-}
+// }

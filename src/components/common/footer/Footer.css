@@ -6,8 +6,6 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-
-
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
@@ -55,13 +53,7 @@
   .footer-info__number, .footer-info__contact {
     text-align: end;
   }
-  
-  .footer-date {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  
+
   .footer-seperator {
     flex-grow: 1;
     border: none;
@@ -70,14 +62,3 @@
     width: 100%;
   }
   
-  .footer-name {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .footer-bottom__name {
-    text-transform: uppercase;
-    font-family: RobotoBold;
-    font-size: large;
-    margin: 0px 20px;
-  }
