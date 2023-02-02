@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+import { Routes, Route } from 'react-router-dom';
+
 // Import all components
 import { Header, Footer } from './components/common';
 import Figure from './components/Figure';
@@ -7,6 +9,11 @@ import Wrongletters from './components/Wrongletters';
 import Word from './components/Word';
 import Popup from './components/Popup';
 import Notification from './components/Notification';
+
+import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
+import About from './components/About';
+
 
 
 // importing same name?
@@ -16,6 +23,7 @@ import { showNotification as show } from './helpers/helpers';
 // Simple, we don't need state management
 import './App.css';
 
+// Dictionary needs to be implmented
 const words = ['application', 'programming', 'interface', 'wizard'];
 
 // words, round down Math.random in relation to length of dictionary - pass as prop
@@ -23,8 +31,9 @@ let selectedWord = words[Math.floor(Math.random() * words.length)];
 
 let playable = true;
 
-// state management
+// Need array for correct letters chosen
 const correctLetters = [];
+// require array for wrong letters chosen
 const wrongLetters = [];
 
 function App() {
@@ -97,6 +106,12 @@ function App() {
    return (
     <div className="App">
       <Header />
+      <Routes>
+          <Route path='/Contact' element={<Contact />} />
+          <Route path='/Portfolio' element={<Portfolio />} />
+          <Route path='/About' element={<About />} />
+          {/* <Route path='/' element={<Home />} /> */}
+        </Routes>
       <div className="container">
         <Figure wrongLetters={wrongLetters} />
         <Wrongletters wrongLetters={wrongLetters} />
