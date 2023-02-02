@@ -8,7 +8,7 @@ const Wrongletters = ({wrongLetters}) => {
     <div className="wrong-letters-container">
         <div>
             {/* if greater than 0 AND  */}
-            {wrongLetters.length > 0 && <p>Wrong</p>}
+            {/* {wrongLetters.length > 0 && <p>Wrong</p>} */}
             {/* map through letters, use index i, set key to i in span and   */}
             {wrongLetters
                 .map( (letter, i) => <span key={i}>{letter}</span>)

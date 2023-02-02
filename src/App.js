@@ -25,6 +25,10 @@ import './App.css';
 
 // Dictionary needs to be implmented
 const words = ['application', 'programming', 'interface', 'wizard'];
+// const words = './dictionary.txt';
+// const dictionaryWords = words.
+const dictionary = './dictionary.txt';
+
 
 // words, round down Math.random in relation to length of dictionary - pass as prop
 let selectedWord = words[Math.floor(Math.random() * words.length)];
@@ -38,6 +42,7 @@ const wrongLetters = [];
 
 function App() {
 
+  // 
   const [playable, setPlayable] = useState(true); 
   const [correctLetters, setCorrectLetters] = useState([]);
   const [wrongLetters, setWrongLetters] = useState([]);
@@ -112,7 +117,7 @@ function App() {
           <Route path='/About' element={<About />} />
           {/* <Route path='/' element={<Home />} /> */}
         </Routes>
-      <div className="container">
+      <div className="game-container">
         <Figure wrongLetters={wrongLetters} />
         <Wrongletters wrongLetters={wrongLetters} />
         {/* pass down as props */}

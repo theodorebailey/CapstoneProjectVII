@@ -45,16 +45,17 @@
 }
 /* 
 .container {
-
+  width: 100%;
+  
 } */
 
-/* .game-container {
+.game-container {
   padding: 20px 30px;
-  position: relative;
+  /* position: relative; */
   margin: auto;
-  height: 350px;
+  height: auto;
   width: 450px;
-} */
+}
 
 /* .figure-container {
   fill: transparent;
@@ -67,32 +68,28 @@
   display: none;
 } */
 
-/* .wrong-letters-container {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  display: flex;
+.wrong-letters-container {
   flex-direction: column;
-  text-align: right;
-} */
+}
 
-/* .wrong-letters-container p {
+.wrong-letters-container p {
   margin: 0 0 5px;
-} */
+}
 
-/* .wrong-letters-container span {
+.wrong-letters-container span {
   font-size: 24px;
-} */
-/* 
-.word {
-  display: flex;
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-} */
+}
 
-/* .letter {
+
+.word {
+
+  margin: 10px;
+  padding: 10px;
+  display: inline-flex;
+  
+} 
+
+.letter {
   border-bottom: 3px solid #2980b9;
   display: inline-flex;
   font-size: 30px;
@@ -101,7 +98,7 @@
   margin: 0 3px;
   height: 50px;
   width: 20px;
-} */
+}
 
 /* .popup-container {
   background-color: rgba(0, 0, 0, 0.3);

@@ -1,3 +1,16 @@
+// export function dictionaryWord () {
+//     let files = './dictionary.txt';
+
+//     if (files.length == 0) return;
+
+//     let reader = new FileReader();
+
+//     reader.onload = (e) => {
+//         const file = files;
+
+//     }
+// }
+
 // notification function
 export function showNotification(setter) {
     // when called, setter is equal to true
