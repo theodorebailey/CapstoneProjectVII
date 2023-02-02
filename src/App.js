@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Component } from 'react';
 
 import { Routes, Route } from 'react-router-dom';
 
@@ -14,6 +14,9 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import About from './components/About';
 
+import Dictionary from './dictionary.txt';
+
+import Buttons from './components/Buttons';
 
 
 // importing same name?
@@ -28,7 +31,6 @@ const words = ['application', 'programming', 'interface', 'wizard'];
 // const words = './dictionary.txt';
 // const dictionaryWords = words.
 const dictionary = './dictionary.txt';
-
 
 // words, round down Math.random in relation to length of dictionary - pass as prop
 let selectedWord = words[Math.floor(Math.random() * words.length)];
@@ -107,6 +109,15 @@ function App() {
   
   }
 
+  class App extends Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+
+      }
+    }
+  }
+
 
    return (
     <div className="App">
@@ -117,7 +128,7 @@ function App() {
           <Route path='/About' element={<About />} />
           {/* <Route path='/' element={<Home />} /> */}
         </Routes>
-      <div className="game-container">
+        <div className="game-container">
         <Figure wrongLetters={wrongLetters} />
         <Wrongletters wrongLetters={wrongLetters} />
         {/* pass down as props */}
@@ -125,6 +136,7 @@ function App() {
       </div>
       <Popup correctLetters={correctLetters} wrongLetters={wrongLetters} selectedWord={selectedWord} setPlayable={setPlayable} playAgain={playAgain}/>
       <Notification showNotification={showNotification} />
+      <Buttons /> 
       <Footer />
     </div>
   );

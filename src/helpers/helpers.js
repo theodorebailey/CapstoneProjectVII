@@ -1,16 +1,3 @@
-// export function dictionaryWord () {
-//     let files = './dictionary.txt';
-
-//     if (files.length == 0) return;
-
-//     let reader = new FileReader();
-
-//     reader.onload = (e) => {
-//         const file = files;
-
-//     }
-// }
-
 // notification function
 export function showNotification(setter) {
     // when called, setter is equal to true
@@ -38,7 +25,22 @@ export function checkWin(correct, wrong, word) {
     });
 
     // check for loss
-    if (wrong.length == 10) status = 'lose';
+    if (wrong.length == 11) status = 'lose';
 
     return status;
+}
+
+export function buttongenerator() {
+  let buttons = 'abcdefghijklmnopqrstuvxyz'.split('').map(letter => 
+    `
+    <button className="btn btn-lg btn-primary m-2"
+    id='`+ letter + `
+    onClick="handleGuess('` + letter + `')"
+    >
+
+      ` + letter + `
+    </button>
+    `
+    );
+
 }

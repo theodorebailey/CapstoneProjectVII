@@ -21,9 +21,6 @@ import img10 from './hangmandrawings/state11.GIF';
 // import img6 from './images/6.png';
 // import img7 from './images/7.png';
 
-
-
-// bring in props by destructering - using wrong letters to count errors
 const Figure = ({wrongLetters}) => {
 
 	const errors = wrongLetters.length;
@@ -43,7 +40,8 @@ const Figure = ({wrongLetters}) => {
       { errors == 7 && <img src={img7} alt="" /> }
       { errors == 8 && <img src={img8} alt="" /> }
       { errors == 9 && <img src={img8} alt="" /> }
-      { errors == 10 && <img src={img9} alt="" /> }
+      { errors == 10 && <img src={img9} alt="" />}
+      { errors == 11 && <img src={img10} alt="" />}
     </div> 
 
 
@@ -53,13 +51,3 @@ const Figure = ({wrongLetters}) => {
 export default Figure
 
 
-{/* <div className="container">
-{ errors == 0 && <img src={img0} alt="" /> }
-{ errors == 1 && <img src={img1} alt="" /> }
-{ errors == 2 && <img src={img2} alt="" /> }
-{ errors == 3 && <img src={img3} alt="" /> }
-{ errors == 4 && <img src={img4} alt="" /> }
-{ errors == 5 && <img src={img5} alt="" /> }
-{ errors == 6 && <img src={img6} alt="" /> }
-{ errors == 7 && <img src={img7} alt="" /> }
-</div> */}
