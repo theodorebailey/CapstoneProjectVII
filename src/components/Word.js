@@ -13,7 +13,7 @@ const Word = ({selectedWord, correctLetters}) => {
             // require a key for mapping, 
         <span className="letter" key={i}>
         {/* does it contain letter t/f - yes or blank */}
-        {correctLetters.includes(letter) ? letter : ''}
+        {correctLetters.includes(letter) ? letter.toUpperCase() : ''}
         </span>
         )
     })}

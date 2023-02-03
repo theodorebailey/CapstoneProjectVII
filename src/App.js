@@ -12,13 +12,6 @@ import Portfolio from './components/Portfolio';
 
 import { Dictionary } from './helpers/Dictionary';
 
-// import Dictionary from './dictionary.txt';
-
-// Dictionary needs to be implmented
-// const words = ['application', 'programming', 'interface', 'wizard'];
-// words, round down Math.random in relation to length of dictionary - pass as prop
-// let selectedWord = words[Math.floor(Math.random() * words.length)];
-
 var words = Dictionary.split("\n");
 
 let selectedWord = words[Math.floor(Math.random() * words.length)];
@@ -90,21 +83,21 @@ function App() {
   
   }
 
-  
+  // create one component for all components
    return (
     <div className="App">
       <Header />
       <Routes>
           <Route path='/Portfolio' element={<Portfolio />} />
           <Route path='/About' element={<Portfolio />} />
-        </Routes>
+      </Routes>
         <div className="game-container">
-        <Figure wrongLetters={wrongLetters} />
+          <Figure wrongLetters={wrongLetters} />
         <Wrongletters wrongLetters={wrongLetters} />
-        {/* pass down as props */}
         <Word selectedWord={selectedWord} correctLetters={correctLetters}/>
       </div>
       <Popup correctLetters={correctLetters} wrongLetters={wrongLetters} selectedWord={selectedWord} setPlayable={setPlayable} playAgain={playAgain}/>
+        
     </div>
   );
 }

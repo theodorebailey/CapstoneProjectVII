@@ -11,7 +11,7 @@ const Wrongletters = ({wrongLetters}) => {
             {/* {wrongLetters.length > 0 && <p>Wrong</p>} */}
             {/* map through letters, use index i, set key to i in span and   */}
             {wrongLetters
-                .map( (letter, i) => <span key={i}>{letter}</span>)
+                .map( (letter, i) => <span key={i}>{letter.toUpperCase()}</span>)
                 // reduce will add our comma between every span which will be assigned our letters
                 .reduce((prev, curr) => prev == null ? [curr] : [prev, ', ', curr], null)}
         </div>
