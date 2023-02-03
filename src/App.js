@@ -12,9 +12,7 @@ import Notification from './components/Notification';
 
 import Portfolio from './components/Portfolio';
 
-import Dictionary from './dictionary.txt';
-
-
+// import Dictionary from './dictionary.txt';
 
 // importing same name?
 import { showNotification as show } from './helpers/helpers';
@@ -27,7 +25,7 @@ import './App.css';
 const words = ['application', 'programming', 'interface', 'wizard'];
 // const words = './dictionary.txt';
 // const dictionaryWords = words.
-const dictionary = './dictionary.txt';
+// const dictionary = './dictionary.txt';
 
 // words, round down Math.random in relation to length of dictionary - pass as prop
 let selectedWord = words[Math.floor(Math.random() * words.length)];

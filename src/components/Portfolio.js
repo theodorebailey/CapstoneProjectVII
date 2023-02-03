@@ -1,12 +1,9 @@
-import React from 'react'
+import React from 'react';
+import './comp.css';
 
 const Portfolio = () => {
-  return (
-    <div>
-        <>
-
-<body>
-
+return (
+    <div className="container">
 <div id="doc2" class="yui-t7">
 	<div id="inner">
 		<div id="hd">
@@ -152,11 +149,8 @@ const Portfolio = () => {
 
 	</div>
 </div>
-</body>
-</>
-      
     </div>
-  )
+)
 }
 
 export default Portfolio
