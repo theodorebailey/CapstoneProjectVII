@@ -7,6 +7,8 @@ Straight forward game:
 
 You'll need a code editor - I use VSCode
 
+You'll also need Node.js installed on your machine: https://nodejs.org/en/download/
+
 You can download the files from Git - green code button
 
 You will likely have to install dependencies using: npm install in the command line whilst current directory of the project: "CapstoneProjectVII-main"
