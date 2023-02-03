@@ -1,5 +1,7 @@
+// function component to check for win, takes in paramters correct, wrong and word
 export function checkWin(correct, wrong, word) {
 
+    // default status to win
     let status = 'win';
 
     // check win
@@ -15,6 +17,7 @@ export function checkWin(correct, wrong, word) {
     // check for loss
     if (wrong.length == 11) status = 'lose';
 
+    // return win or lose status
     return status;
 }
 
@@ -22,7 +25,7 @@ export function checkWin(correct, wrong, word) {
 // export function buttongenerator() {
 //   let buttons = 'abcdefghijklmnopqrstuvxyz'.split('').map(letter => 
 //     `
-//     <button className="btn btn-lg btn-primary m-2"
+//     <button
 //     id='`+ letter + `
 //     onClick="handleGuess('` + letter + `')"
 //     >

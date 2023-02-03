@@ -15,17 +15,17 @@ return (
 
 				<div>
 					<div class="contact-info">
-						<h3><a class="hyperlink" href="mailto:tawbailey@hotmail.com">tawbailey@hotmail.com</a></h3>
+						<h3><a className="hyperlink" href="mailto:tawbailey@hotmail.com">tawbailey@hotmail.com</a></h3>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div id="bd">
-			<div id="yui-main">
-				<div class="yui-b">
+		<div>
+			<div>
+				<div>
 
-					<div class="yui-gf">
+					<div>
 						<div class="yui-u first">
 							<h2>Profile</h2>
 						</div>
@@ -88,7 +88,7 @@ return (
                             <br></br>
 
 
-							<div class="job">
+							<div>
 								<h3>Administration at Leeds Teaching Hospital</h3>
 								<h4>JANUARY 2019 — JUNE 2019</h4>
 								<p>Working alongside a large team, covering a wide variety of job roles necessary to book and manage patient appointments. Speaking with patients over the phone, booking appointments and triaging patient episodes for referral.</p>
@@ -100,7 +100,7 @@ return (
 							</div>
                             <br></br>
 
-                            <div class="job">
+                            <div>
 								<h3>Administration at Leeds Trust Headquarters</h3>
 								<h4>2001-2004</h4>
 								<p>Required to be a flexible team mate and showing the ability to complete work rapidly whilst maintaining a high level of accuracy. I was a trusted point of contact between staff of varying levels and an aid in managing a diverse set of office requests.</p>
@@ -127,11 +127,11 @@ return (
 					</div>
 
 
-					<div class="yui-gf last">
-						<div class="yui-u first">
+					<div>
+						<div>
 							<h2>Education</h2>
 						</div>
-						<div class="yui-u">
+						<div>
 							<h2>HyperionDev, London</h2>
 							<h3>HyperionDev profile: <strong>https://www.hyperiondev.com/portfolio/110165/</strong> </h3>
 						</div>
@@ -142,8 +142,8 @@ return (
 			</div>
 		</div>
 
-		<div id="ft">
-			<p>Theodore Bailey<br></br><a href="mailto:name@yourdomain.com">ted-bailey@hotmail.com</a><br></br>0780 xxx xxxx</p>
+		<div>
+			<p>Theodore Bailey<br></br><a href="tawbailey@hotmail.com">ted-bailey@hotmail.com</a><br></br>0780 xxx xxxx</p>
 		</div>
 
 	</div>

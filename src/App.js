@@ -89,6 +89,7 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
+          <Route path='/Contact' element={<Portfolio />} />
           <Route path='/Portfolio' element={<Portfolio />} />
           <Route path='/About' element={<Portfolio />} />
       </Routes>
