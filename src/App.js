@@ -4,7 +4,7 @@ import './App.css';
 
 // Import all components
 import { Header } from './components/common';
-import Figure from './components/Figure';
+import Image from './components/Image';
 import Wrongletters from './components/Wrongletters';
 import Word from './components/Word';
 import Popup from './components/Popup';
@@ -24,6 +24,7 @@ const wrongLetters = [];
 
 function App() {
 
+  // set play state to true
   const [play, setPlay] = useState(true); 
   const [correctLetters, setCorrectLetters] = useState([]);
   const [wrongLetters, setWrongLetters] = useState([]);
@@ -90,8 +91,8 @@ function App() {
           <Route path='/Portfolio' element={<Portfolio />} />
           <Route path='/About' element={<Portfolio />} />
       </Routes>
-        <div className="game-container">
-        <Figure wrongLetters={wrongLetters} />
+        <div className="container">
+        <Image wrongLetters={wrongLetters} />
         <Word selectedWord={selectedWord} correctLetters={correctLetters}/>
         <Wrongletters wrongLetters={wrongLetters} />
       </div>

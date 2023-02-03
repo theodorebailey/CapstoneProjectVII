@@ -12,7 +12,7 @@ import img8 from './hangmandrawings/state9.GIF';
 import img9 from './hangmandrawings/state10.GIF';
 import img10 from './hangmandrawings/state11.GIF';
 
-const Figure = ({wrongLetters}) => {
+const Image = ({wrongLetters}) => {
 
 	const errors = wrongLetters.length;
 
@@ -37,6 +37,6 @@ const Figure = ({wrongLetters}) => {
   )
 }
 
-export default Figure
+export default Image
 
 

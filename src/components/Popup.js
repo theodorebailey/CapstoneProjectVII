@@ -13,6 +13,7 @@ const Popup = ({ correctLetters, wrongLetters, selectedWord, setPlay, playAgain 
   let revealWord = '';
   let play = true;
 
+  // if function checkwin 
   if ( checkWin(correctLetters, wrongLetters, selectedWord) === 'win') {
     winorlossMessage = "Congratulations, you've won this round.";
     play = false;
@@ -25,7 +26,7 @@ const Popup = ({ correctLetters, wrongLetters, selectedWord, setPlay, playAgain 
   useEffect(() => setPlay(play));
 
   return (
-    <div className="popup-container">
+    <div className="container">
       <div className="popup">
         <h2>{winorlossMessage}</h2>
         <h3>{revealWord}</h3>
