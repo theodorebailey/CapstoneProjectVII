@@ -80,3 +80,11 @@
   height: 50px;
   width: 20px;
 }
+
+.uL {
+  list-style-type: none;
+} 
+
+.hyperlink {
+  text-decoration: none;
+}

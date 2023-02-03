@@ -1,21 +1,21 @@
 import React from 'react';
+import './../App.css';
 
 const Portfolio = () => {
 return (
     <div className="container">
-<div id="doc2" class="yui-t7">
-	<div id="inner">
-		<div id="hd">
-			<div class="yui-gc">
-				<div class="yui-u first">
+<div>
+	<div>
+		<div>
+			<div>
+				<div>
 					<h1>Theodore Bailey</h1>
 					<h2>Web developer</h2>
 				</div>
 
-				<div class="yui-u">
+				<div>
 					<div class="contact-info">
-						<h3><a href="mailto:name@yourdomain.com">tawbailey@hotmail.com</a></h3>
-						<h3>0780 xxx xxxx </h3>
+						<h3><a class="hyperlink" href="mailto:tawbailey@hotmail.com">tawbailey@hotmail.com</a></h3>
 					</div>
 				</div>
 			</div>
@@ -41,29 +41,29 @@ return (
                     <br></br>
 					
 
-					<div class="yui-gf">
-						<div class="yui-u first">
+					<div>
+						<div>
 							<h2>Technical Skills</h2>
 						</div>
-						<div class="yui-u">
-							<ul class="talent">
+						<div>
+							<ul class="uL" stlye={{listStyleType: "none"}}>
 								<li>HTML</li>
 								<li>CSS</li>
                                 <li>React.js</li>
-								<li class="last">Javascript</li>
+								<li>Javascript</li>
                                 <li>Outlook</li>
 							</ul>
 						</div>
 					</div>
-					<div class="yui-gf">
+					<div>
                         <br></br>
-						<div class="yui-u first">
+						<div>
 							<h2>Experience</h2>
 						</div>
 
-						<div class="yui-u">
+						<div>
 
-							<div class="job">
+							<div>
 								<h3>Customer Service Agent at Siderise Insulation</h3>
 								<h4>NOVEMBER 2022 — AUGUST 2023</h4>
 								<p>Ability to work in a fast passed and high pressure environment whilst maintaining accuracy in detailed quotations to then progress onto purchase.</p>

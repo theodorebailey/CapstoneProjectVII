@@ -96,6 +96,7 @@ function App() {
       <Header />
       <Routes>
           <Route path='/Portfolio' element={<Portfolio />} />
+          <Route path='/Home' element={<Portfolio />} />
         </Routes>
         <div className="game-container">
         <Figure wrongLetters={wrongLetters} />
