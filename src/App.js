@@ -1,8 +1,9 @@
 import React, { useState, useEffect, Component } from 'react';
 import { Routes, Route } from 'react-router-dom';
+import './App.css';
 
 // Import all components
-import { Header, Footer } from './components/common';
+import { Header } from './components/common';
 import Figure from './components/Figure';
 import Wrongletters from './components/Wrongletters';
 import Word from './components/Word';
@@ -12,13 +13,6 @@ import Portfolio from './components/Portfolio';
 import { Dictionary } from './helpers/Dictionary';
 
 // import Dictionary from './dictionary.txt';
-
-// importing same name?
-import { showNotification as show } from './helpers/helpers';
-
-// We want to build our App, then identify what states we require
-// Simple, we don't need state management
-import './App.css';
 
 // Dictionary needs to be implmented
 // const words = ['application', 'programming', 'interface', 'wizard'];
@@ -110,7 +104,6 @@ function App() {
         <Word selectedWord={selectedWord} correctLetters={correctLetters}/>
       </div>
       <Popup correctLetters={correctLetters} wrongLetters={wrongLetters} selectedWord={selectedWord} setPlayable={setPlayable} playAgain={playAgain}/>
-      <Footer />
     </div>
   );
 }

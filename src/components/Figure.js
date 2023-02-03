@@ -1,5 +1,4 @@
 import React from 'react';
-import './comp.css';
 
 import img0 from './hangmandrawings/state1.GIF';
 import img1 from './hangmandrawings/state2.GIF';

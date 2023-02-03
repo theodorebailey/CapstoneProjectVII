@@ -7,11 +7,9 @@
 // import components
 import Header from './header';
 import Navbar from './navbar';
-import Footer from './footer';
 
 // export multiples
 export {
     Header,
     Navbar,
-    Footer
 }
