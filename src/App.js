@@ -1,5 +1,4 @@
 import React, { useState, useEffect, Component } from 'react';
-
 import { Routes, Route } from 'react-router-dom';
 
 // Import all components
@@ -12,6 +11,8 @@ import Notification from './components/Notification';
 
 import Portfolio from './components/Portfolio';
 
+import { Dictionary } from './helpers/Dictionary';
+
 // import Dictionary from './dictionary.txt';
 
 // importing same name?
@@ -22,20 +23,20 @@ import { showNotification as show } from './helpers/helpers';
 import './App.css';
 
 // Dictionary needs to be implmented
-const words = ['application', 'programming', 'interface', 'wizard'];
-// const words = './dictionary.txt';
-// const dictionaryWords = words.
-// const dictionary = './dictionary.txt';
-
+// const words = ['application', 'programming', 'interface', 'wizard'];
 // words, round down Math.random in relation to length of dictionary - pass as prop
+// let selectedWord = words[Math.floor(Math.random() * words.length)];
+
+var words = Dictionary.split("\n");
+
 let selectedWord = words[Math.floor(Math.random() * words.length)];
 
-let playable = true;
-
-// Need array for correct letters chosen
+// Store correct letters
 const correctLetters = [];
-// require array for wrong letters chosen
+// Store wrong letters
 const wrongLetters = [];
+
+let playable = true;
 
 function App() {
 

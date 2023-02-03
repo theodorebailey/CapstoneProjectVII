@@ -30,6 +30,7 @@ export function checkWin(correct, wrong, word) {
     return status;
 }
 
+
 // export function buttongenerator() {
 //   let buttons = 'abcdefghijklmnopqrstuvxyz'.split('').map(letter => 
 //     `
