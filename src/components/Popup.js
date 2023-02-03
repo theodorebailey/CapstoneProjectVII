@@ -13,7 +13,7 @@ const Popup = ({ correctLetters, wrongLetters, selectedWord, setPlay, playAgain 
   let revealWord = '';
   let play = true;
 
-  // if function checkwin 
+  // check win function for correct letters wrong letters and selected word props
   if ( checkWin(correctLetters, wrongLetters, selectedWord) === 'win') {
     winorlossMessage = "Congratulations, you've won this round.";
     play = false;
@@ -23,15 +23,18 @@ const Popup = ({ correctLetters, wrongLetters, selectedWord, setPlay, playAgain 
     play = false;
   } 
 
+  // use effect to uset play value
   useEffect(() => setPlay(play));
 
   return (
-    <div className="container">
+    <div>
       <div className="popup">
+        {/* win / loss message depending on outcome */}
         <h2>{winorlossMessage}</h2>
+        {/* reveals word held in container */}
         <h3>{revealWord}</h3>
         {/* playAgain needs to change state */}
-        <button onClick={playAgain}>Play Again</button>
+        <button onClick={playAgain}>Play again?</button>
       </div>
     </div>
 

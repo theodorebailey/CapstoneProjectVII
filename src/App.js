@@ -13,8 +13,9 @@ import Help from './components/Help';
 
 import { Dictionary } from './components/Dictionary';
 
-var words = Dictionary.split("\n");
-
+// set words to dictionary
+let words = Dictionary.split("\n");
+// use Math to select random word from dictionary
 let selectedWord = words[Math.floor(Math.random() * words.length)];
 
 // Store correct letters
@@ -26,7 +27,9 @@ function App() {
 
   // set play state to true
   const [play, setPlay] = useState(true); 
+  // use state for all correct buttons set - reset state on each successful guess
   const [correctLetters, setCorrectLetters] = useState([]);
+  // use state for wrong letters - reset state on each unsuccessful guess
   const [wrongLetters, setWrongLetters] = useState([]);
 
   // use effect will use any side effects of our app

@@ -1,18 +1,9 @@
+/* align text center page */
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* app header elements */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -25,7 +16,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #EA4C89;
 }
 
 @keyframes App-logo-spin {
@@ -37,8 +28,10 @@
   }
 }
 
+/* import font syle */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300');
 
+/* reset defaults */
 * {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
@@ -46,29 +39,45 @@
   padding: 0;
 }
 
+/* set container attributes for standard box sizing */
 .container {
   padding: 10px 30px;
   margin: auto;
   height: auto;
-  width: 450px;
 }
 
+/* flex column essential */
 .wrong-letters {
   flex-direction: column;
   height: 20px;
+  padding: 30px;
 }
 
 .guesses {
-  margin: 20px 0;
+  padding: 40px;
+  display: inline-block;
 }
 
 .popup {
-  margin: 15px 15px;
-  padding-top: 40px;
+  margin-top: 100px;
 }
 
 .popup button {
-  margin: 10px;
+  background-color: #0095f8;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  border-style: none;
+  color: #FFFFFF;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 40px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: color 100ms;
+}
+
+.popup button:hover{
+  background-color: #a50442;
 }
 
 .word {
@@ -78,7 +87,7 @@
 } 
 
 .letter {
-  border-bottom: 3px solid #2980b9;
+  border-bottom: 3px solid #0095f8;
   display: inline-flex;
   font-size: 30px;
   align-items: center;
@@ -96,6 +105,11 @@
   text-decoration: none;
 }
 
-/* .instruc {
-  top: 50;
-} */
+.instructions-header {
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+.instructions {
+  font-weight: 700;
+}
+
