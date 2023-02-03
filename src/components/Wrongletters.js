@@ -2,6 +2,8 @@ import React from 'react'
 
 // requires our event listener
 
+let guesses = 11;
+
 // pass down wrongLetters as paramter, remember to destructor (unpack values nested in our array / objects)
 const Wrongletters = ({wrongLetters}) => {
   return (
@@ -15,6 +17,7 @@ const Wrongletters = ({wrongLetters}) => {
                 // reduce will add our comma between every span which will be assigned our letters
                 .reduce((prev, curr) => prev == null ? [curr] : [prev, ', ', curr], null)}
         </div>
+        <div>You have: {guesses - wrongLetters.length} guesses left.</div>
     </div>
   )
 }

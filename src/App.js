@@ -9,6 +9,7 @@ import Wrongletters from './components/Wrongletters';
 import Word from './components/Word';
 import Popup from './components/Popup';
 import Portfolio from './components/Portfolio';
+import Help from './components/Help';
 
 import { Dictionary } from './components/Dictionary';
 
@@ -21,11 +22,11 @@ const correctLetters = [];
 // Store wrong letters
 const wrongLetters = [];
 
+
 let playable = true;
 
 function App() {
 
-  // 
   const [playable, setPlayable] = useState(true); 
   const [correctLetters, setCorrectLetters] = useState([]);
   const [wrongLetters, setWrongLetters] = useState([]);
@@ -97,7 +98,7 @@ function App() {
         <Word selectedWord={selectedWord} correctLetters={correctLetters}/>
       </div>
       <Popup correctLetters={correctLetters} wrongLetters={wrongLetters} selectedWord={selectedWord} setPlayable={setPlayable} playAgain={playAgain}/>
-        
+      <Help /> 
     </div>
   );
 }
