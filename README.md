@@ -9,6 +9,8 @@ You'll need a code editor - I use VSCode
 
 You can download the files from Git - green code button
 
+You will likely have to install dependencies using: npm install, further instructions below
+
 The project was made and is maintained by myself, but hopefully it is finished.
 
 Below is the installation instructions provided by React.
