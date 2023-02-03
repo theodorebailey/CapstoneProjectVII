@@ -9,7 +9,9 @@ You'll need a code editor - I use VSCode
 
 You can download the files from Git - green code button
 
-You will likely have to install dependencies using: npm install, further instructions below
+You will likely have to install dependencies using: npm install in the command line whilst current directory of the project: "CapstoneProjectVII-main"
+
+Once all dependencies are downloadrd, use "npm start" to run the project.
 
 The project was made and is maintained by myself, but hopefully it is finished.
 
