@@ -7,8 +7,6 @@ import Figure from './components/Figure';
 import Wrongletters from './components/Wrongletters';
 import Word from './components/Word';
 import Popup from './components/Popup';
-import Notification from './components/Notification';
-
 import Portfolio from './components/Portfolio';
 
 import { Dictionary } from './helpers/Dictionary';
@@ -44,7 +42,6 @@ function App() {
   const [playable, setPlayable] = useState(true); 
   const [correctLetters, setCorrectLetters] = useState([]);
   const [wrongLetters, setWrongLetters] = useState([]);
-  const [showNotification, setShowNotification] = useState(false);
 
   // use effect will use any side effects of our app
   // By adding our event listener here, everytime our app re-renders our event listener will be added
@@ -65,19 +62,12 @@ function App() {
             // setCorrectLetters to currentLetters, spread operator for currentLetters, then add new letter evaluated to true
             setCorrectLetters(currentLetters => [...currentLetters, letter]);
             // run display word function
-          } else {
-            // shows notification we've already entered our letter
-            // imported function passed with parameter setShowNotification switch between states true and false;
-            show(setShowNotification);
           }
         } else {
           // check if already included wrong letters
           if (!wrongLetters.includes(letter)) {
             // if doesn't include letter, setWrongLetters to the wrongLetters, split array and add new letter
             setWrongLetters(wrongLetters => [...wrongLetters, letter]);
-          } else {
-            // if already included show a notification
-            show(setShowNotification);
           }
         }
       }
@@ -106,16 +96,7 @@ function App() {
   
   }
 
-  class App extends Component {
-    constructor(props) {
-      super(props);
-      this.state = {
-
-      }
-    }
-  }
-
-
+  
    return (
     <div className="App">
       <Header />
@@ -129,7 +110,6 @@ function App() {
         <Word selectedWord={selectedWord} correctLetters={correctLetters}/>
       </div>
       <Popup correctLetters={correctLetters} wrongLetters={wrongLetters} selectedWord={selectedWord} setPlayable={setPlayable} playAgain={playAgain}/>
-      <Notification showNotification={showNotification} />
       <Footer />
     </div>
   );

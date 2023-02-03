@@ -18,14 +18,14 @@ function Footer () {
                         Theodore Bailey
                     </div>
                     <div className="footer-info__returns">
-                        Company Policy
+                        Policy
                         <br />
-                        Delivery Promise
+                        Promise
                     </div>
                 </div>
                 <div className="footer-info-center">
                     <div className="footer-info__email">
-                        fridgeExcess@gmail.com
+                        hangman game
                     </div>
                     <div className="footer-info__terms">
                         Terms and Conditions
@@ -38,7 +38,7 @@ function Footer () {
                         0123 4567 8910                      
                     </div>
                     <div className="footer-info__contact">
-                        Our Companies Story
+                        Companies Story
                         <br />
                         Contact Details
                     </div>
