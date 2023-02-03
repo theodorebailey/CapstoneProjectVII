@@ -4,25 +4,25 @@ import './../App.css'
 // import function from helpers
 import { checkWin } from './helpers';
 // remember to destructer your props
-// set playable is a side effect
-// check correct letters, wrong letters, selectedWord for game, setPlayable boolean and add play again
-const Popup = ({ correctLetters, wrongLetters, selectedWord, setPlayable, playAgain } ) => {
+// set play is a side effect
+// check correct letters, wrong letters, selectedWord for game, setPlay boolean and add play again
+const Popup = ({ correctLetters, wrongLetters, selectedWord, setPlay, playAgain } ) => {
 
   // create message for win or loss
   let winorlossMessage = '';
   let revealWord = '';
-  let playable = true;
+  let play = true;
 
   if ( checkWin(correctLetters, wrongLetters, selectedWord) === 'win') {
     winorlossMessage = "Congratulations, you've won this round.";
-    playable = false;
+    play = false;
   } else if (checkWin(correctLetters, wrongLetters, selectedWord) == 'lose') {
     winorlossMessage = "Uh oh, you've lost this time!";
     revealWord = `...the word was: ${selectedWord}`;
-    playable = false;
+    play = false;
   } 
 
-  useEffect(() => setPlayable(playable));
+  useEffect(() => setPlay(play));
 
   return (
     <div className="popup-container">

@@ -22,12 +22,9 @@ const correctLetters = [];
 // Store wrong letters
 const wrongLetters = [];
 
-
-let playable = true;
-
 function App() {
 
-  const [playable, setPlayable] = useState(true); 
+  const [play, setPlay] = useState(true); 
   const [correctLetters, setCorrectLetters] = useState([]);
   const [wrongLetters, setWrongLetters] = useState([]);
 
@@ -38,9 +35,9 @@ function App() {
     const handleKeydown = event => {
       // key and ascii code using react
     const {key, keyCode} = event;
-      // if playable true and event object keyCode is between alphabet range
+      // if play true and event object keyCode is between alphabet range
       // ensure letters read as such - if letter key
-      if (playable && keyCode >= 65 && keyCode <= 90) {
+      if (play && keyCode >= 65 && keyCode <= 90) {
         // set letter to lowerCase
         const letter = key.toLowerCase();
         // Now if the selected word contains the letter (passed as parameter)
@@ -68,12 +65,12 @@ function App() {
   return () => window.removeEventListener('keydown', handleKeydown);
 
   // the empty array will stop this being called everytime the app renders - blank array will make it run only on initial render
-  // anytime correctLetters, wrongLetters and playable get updated will call this function, and on initial render
-  }, [correctLetters, wrongLetters, playable]);
+  // anytime correctLetters, wrongLetters and play get updated will call this function, and on initial render
+  }, [correctLetters, wrongLetters, play]);
 
   function playAgain () {
-    // set playable to true
-    setPlayable(true);
+    // set play to true
+    setPlay(true);
   
     // empty all game dependent arrays
     setCorrectLetters([]);
@@ -98,7 +95,7 @@ function App() {
         <Word selectedWord={selectedWord} correctLetters={correctLetters}/>
         <Wrongletters wrongLetters={wrongLetters} />
       </div>
-      <Popup correctLetters={correctLetters} wrongLetters={wrongLetters} selectedWord={selectedWord} setPlayable={setPlayable} playAgain={playAgain}/>
+      <Popup correctLetters={correctLetters} wrongLetters={wrongLetters} selectedWord={selectedWord} setPlay={setPlay} playAgain={playAgain}/>
       <Help /> 
     </div>
   );
