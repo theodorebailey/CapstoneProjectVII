@@ -10,7 +10,7 @@ import Word from './components/Word';
 import Popup from './components/Popup';
 import Portfolio from './components/Portfolio';
 
-import { Dictionary } from './helpers/Dictionary';
+import { Dictionary } from './components/Dictionary';
 
 var words = Dictionary.split("\n");
 

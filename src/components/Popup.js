@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 
-import { checkWin } from './../helpers/helpers';
+import { checkWin } from './helpers';
 // remember to destructer your props
 // set playable is a side effect
 // check correct letters, wrong letters, selectedWord for game, setPlayable boolean and add play again

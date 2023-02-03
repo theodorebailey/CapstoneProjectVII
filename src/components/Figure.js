@@ -12,15 +12,6 @@ import img8 from './hangmandrawings/state9.GIF';
 import img9 from './hangmandrawings/state10.GIF';
 import img10 from './hangmandrawings/state11.GIF';
 
-// import img0 from './images/0.png';
-// import img1 from './images/1.png';
-// import img2 from './images/2.png';
-// import img3 from './images/3.png';
-// import img4 from './images/4.png';
-// import img5 from './images/5.png';
-// import img6 from './images/6.png';
-// import img7 from './images/7.png';
-
 const Figure = ({wrongLetters}) => {
 
 	const errors = wrongLetters.length;
