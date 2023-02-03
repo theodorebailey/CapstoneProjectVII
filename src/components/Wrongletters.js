@@ -17,7 +17,7 @@ const Wrongletters = ({wrongLetters}) => {
                 // reduce will add our comma between every span which will be assigned our letters
                 .reduce((prev, curr) => prev == null ? [curr] : [prev, ', ', curr], null)}
         </div>
-        <div>You have: {guesses - wrongLetters.length} guesses left.</div>
+        <p className="guesses-left">You have: {guesses - wrongLetters.length} guesses left after {wrongLetters.length} incorrect guesses. </p>
     </div>
   )
 }

@@ -93,9 +93,9 @@ function App() {
           <Route path='/About' element={<Portfolio />} />
       </Routes>
         <div className="game-container">
-          <Figure wrongLetters={wrongLetters} />
-        <Wrongletters wrongLetters={wrongLetters} />
+        <Figure wrongLetters={wrongLetters} />
         <Word selectedWord={selectedWord} correctLetters={correctLetters}/>
+        <Wrongletters wrongLetters={wrongLetters} />
       </div>
       <Popup correctLetters={correctLetters} wrongLetters={wrongLetters} selectedWord={selectedWord} setPlayable={setPlayable} playAgain={playAgain}/>
       <Help /> 
