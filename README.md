@@ -1,3 +1,14 @@
+Straight forward game:
+- use your keyboard to select letters to guess the word combination
+- You have 11 guesses total
+- Start with vowels, can still prove difficult :) 
+
+
+
+
+
+Below is the installation instructions
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
