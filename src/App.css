@@ -37,34 +37,38 @@
   }
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300');
+
 * {
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-
 .container {
-  padding: 20px 30px;
+  padding: 10px 30px;
   margin: auto;
   height: auto;
   width: 450px;
 }
 
-.wrong-letters-container {
+.wrong-letters {
   flex-direction: column;
   height: 20px;
 }
 
-.guesses-left {
+.guesses {
   margin: 20px 0;
 }
 
 .popup {
   margin: 15px 15px;
-
+  padding-top: 40px;
 }
 
-.wrong-letters-container span {
-  font-size: 24px;
+.popup button {
+  margin: 10px;
 }
 
 .word {
@@ -91,3 +95,7 @@
 .hyperlink {
   text-decoration: none;
 }
+
+/* .instruc {
+  top: 50;
+} */
