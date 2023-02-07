@@ -19,17 +19,7 @@
   color: #EA4C89;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
-/* import font syle */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300');
 
 /* reset defaults */
 * {

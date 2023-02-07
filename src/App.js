@@ -1,5 +1,4 @@
 import React, { useState, useEffect, Component } from 'react';
-import { Routes, Route } from 'react-router-dom';
 import './App.css';
 
 // Import all components
@@ -8,7 +7,6 @@ import Image from './components/Image';
 import Wrongletters from './components/Wrongletters';
 import Word from './components/Word';
 import Popup from './components/Popup';
-import Portfolio from './components/Portfolio';
 import Help from './components/Help';
 
 import { Dictionary } from './components/Dictionary';
@@ -85,15 +83,26 @@ function App() {
   
   }
 
+  // handleGuess(e) {
+  //   let letter = e.target.value;
+  //   this.setState((st) => ({
+  //     guessed: st.guessed.add(letter),
+  //     noOfWrong: st.noOfWrong + (st.answer.includes(letter) ? 0 : 1),
+
+  //   }))
+
+  // }
+
+  // generateKeypad () {
+  //   return "abcdefghijklmnopqrstuvwxyz".split("").map((letter) => (
+  //     <button key={letter} value={letter} onClick={this.handleGuess} disabled={this.state.guess.has(letter)}>{letter}</button>
+  //   ))
+  // }
+
   // create one component for all components
    return (
     <div className="App">
       <Header />
-      <Routes>
-          <Route path='/Contact' element={<Portfolio />} />
-          <Route path='/Portfolio' element={<Portfolio />} />
-          <Route path='/About' element={<Portfolio />} />
-      </Routes>
         <div className="container">
         <Image wrongLetters={wrongLetters} />
         <Word selectedWord={selectedWord} correctLetters={correctLetters}/>
